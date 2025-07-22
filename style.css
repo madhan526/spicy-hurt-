@@ -1,0 +1,494 @@
+*:root{
+    --yellow:#FFC54D;
+    --green:#53BF9D;
+    --red:crimson;
+    --white:whitesmoke;
+}
+
+
+body,h2{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+.landing{
+    background-image: url(./pexels-thepaintedsquare-858094.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: var(--white);
+    
+}
+header a{
+    text-decoration: none;
+    color:var(--yellow) ;
+    flex-wrap: wrap;
+
+}
+
+header{
+    display: flex;
+    padding: 1.25em;
+    flex-wrap: wrap;
+}
+#logo{
+    flex: 3;
+    font-size: 1.25em;
+}
+nav{
+    flex: 2;
+    display: flex;
+    flex-wrap: wrap;
+}
+nav a{
+    flex: 1;
+    flex-wrap: wrap;
+}
+nav a:hover{
+    color: var(--green);
+}
+.maintext{
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    justify-content: center;
+    padding: 2em;
+}
+.tagline1{
+    color: var(--red);
+    font-size: 2.5em;
+    font-weight: bolder;
+}
+.tagline2{
+    color: var(--yellow);
+}
+.maintext div{
+    margin-top: .75em;
+}
+.maintext button{
+    width: 20vw;
+    margin-top: 2em;
+    border-radius: 10px;
+    padding: .7em;
+    background-color: var(--green);
+    color: var(--white);
+    border: 1px solid var(--green);
+}
+.menu{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background:linear-gradient(to right,rgb(100,100,100),rgb(53,52,52));
+    color: var(--white);
+     
+}
+
+#menuheading,#locheading{
+    background: linear-gradient(to right,rgb(100,100,100),rgb(53,52,52));
+    font-size: 2.5em;
+    color: var(--red);
+    display: flex;
+    justify-content: center;
+}
+.menu th{
+    color: var(--green);
+    font-size: 1.8em;
+}
+table{
+    width: 100%;
+    padding: 1em;
+}
+.Locations{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background: var(--white);
+    color: var(--red);
+    padding: 1em;
+}
+.Locations h2{
+    color: var(--green);
+    font-size: 1.8em;
+}
+
+
+
+#foodgallery {
+  text-align: center;
+  font-size: 2em;
+  margin: 40px 0 20px;
+  color: #d35400;
+}
+
+.food-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 0 20px 40px;
+}
+
+.food-card {
+  background-color:grey;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.food-card:hover {
+  transform: scale(1.05);
+}
+
+.food-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+}
+
+.food-card p {
+  padding: 10px;
+  font-weight: bold;
+  color: #c0392b;
+}
+
+
+
+footer {
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+  padding: 20px 10px;
+  margin-top: 40px;
+}
+
+.footer-content a {
+  color: #ff704d;
+  margin: 0 10px;
+  text-decoration: none;
+  font-size: 1.2em;
+  transition: color 0.3s ease;
+}
+
+.footer-content a:hover {
+  color: #fff;
+}
+
+.footer-content p {
+  margin: 8px 0;
+}
+
+#reviewheading {
+  text-align: center;
+  font-size: 2em;
+  margin: 40px 0 20px;
+  color: #d35400;
+}
+
+.review-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 20px;
+}
+
+.review-card {
+  background: linear-gradient(145deg, #fff5e6, #ffd1a4);
+  border-radius: 15px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1),
+              -10px -10px 20px rgba(255, 255, 255, 0.4);
+  padding: 20px;
+  max-width: 300px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.review-card:hover {
+  transform: translateY(-10px) rotateX(5deg);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.review-card img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #e67e22;
+  margin-bottom: 15px;
+}
+
+.review-card h3 {
+  margin: 10px 0 5px;
+  color: #c0392b;
+}
+
+.review-card p {
+  font-style: italic;
+  font-size: 0.95em;
+  color: #444;
+}
+
+
+@media screen and (min-width: 521px) and (max-width: 768px) {
+  /* HEADER */
+  header {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1em;
+  }
+
+  #logo {
+    flex-basis: 100%;
+    text-align: center;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+  }
+
+  nav {
+    flex-basis: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  nav a {
+    flex: none;
+    font-size: 1em;
+    padding: 8px 12px;
+  }
+
+  /* MAIN TEXT */
+  .maintext {
+    padding: 1.5em;
+    text-align: center;
+  }
+
+  .tagline1 {
+    font-size: 2em;
+  }
+
+  .maintext button {
+    width: 50%;
+    font-size: 1em;
+  }
+
+  /* MENU SECTION */
+  .menu {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /* LOCATIONS */
+  .Locations {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /* FOOD GALLERY */
+  .food-gallery {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  }
+
+  /* REVIEW SECTION */
+  .review-section {
+    gap: 20px;
+  }
+
+  .review-card {
+    max-width: 250px;
+    padding: 15px;
+  }
+
+  /* FOOTER */
+  footer {
+    padding: 15px;
+    font-size: 0.95em;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  /* Header layout */
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #logo {
+    margin-bottom: 10px;
+    font-size: 1.8em;
+  }
+
+  nav {
+    width: 100%;
+    justify-content: center;
+    gap: 1em;
+  }
+
+  nav a {
+    text-align: center;
+    font-size: 1em;
+  }
+
+  /* Main text block */
+  .maintext {
+    padding: 1.5em;
+    text-align: center;
+  }
+
+  .maintext .tagline1 {
+    font-size: 2em;
+  }
+
+  .maintext button {
+    width: 50%;
+  }
+
+  /* Menu grid adjustments */
+  .menu {
+    grid-template-columns: 1fr 1fr; /* Change to 2 columns */
+  }
+
+  /* Location section grid adjustment */
+  .Locations {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /* Gallery grid tweak for medium screens */
+  .food-gallery {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+
+  /* Reviews alignment */
+  .review-section {
+    gap: 20px;
+    padding: 10px;
+  }
+
+  .review-card {
+    max-width: 280px;
+  }
+}
+
+
+/* HAMBURGER MENU BASE STYLES (Hidden by default) */
+.hamburger {
+  display: none;
+  font-size: 2em;
+  color: var(--yellow);
+  cursor: pointer;
+}
+
+/* Hide checkbox */
+.nav-toggle {
+  display: none;
+}
+
+/* MOBILE MENU STYLE */
+@media screen and (min-width: 300px) and (max-width: 520px) {
+  header {
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  #logo {
+    flex: 1 0 100%;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .hamburger {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: rgba(0,0,0,0.8);
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    width: 60%;
+    border-radius: 10px;
+    padding: 10px;
+  }
+
+  .nav-links a {
+    padding: 10px;
+    text-align: right;
+    display: block;
+    color: var(--white);
+    border-bottom: 1px solid #555;
+  }
+
+  .nav-toggle:checked + .hamburger + #logo + .nav-links {
+    display: flex;
+  }
+}
+
+
+
+
+@media screen and (max-width: 520px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1em;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 1em;
+    border-radius: 10px;
+    z-index: 999;
+  }
+
+  .nav-links a {
+    color: var(--white);
+    padding: 10px;
+    text-align: right;
+  }
+
+  .nav-toggle:checked + .hamburger + #logo + .nav-links {
+    display: flex;
+  }
+
+  .maintext {
+    padding: 1em;
+    text-align: center;
+  }
+
+  .maintext button {
+    width: 80%;
+    font-size: 1em;
+  }
+
+  .menu {
+    grid-template-columns: 1fr;
+  }
+
+  .Locations {
+    grid-template-columns: 1fr;
+  }
+
+  .food-gallery {
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  }
+}
+
+
+
+
+
+
+
+
+
+
